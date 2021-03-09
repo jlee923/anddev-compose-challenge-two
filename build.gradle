@@ -38,6 +38,7 @@ subprojects {
     repositories {
         google()
         jcenter()
+        maven { url "https://oss.jfrog.org/libs-snapshot" }
     }
 
     apply plugin: 'com.diffplug.spotless'
