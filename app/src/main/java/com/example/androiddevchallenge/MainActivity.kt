@@ -51,7 +51,8 @@ class MainActivity : AppCompatActivity() {
                     mainViewModel.time,
                     mainViewModel::updateTime,
                     mainViewModel::startClock,
-                    mainViewModel::stopClock)
+                    mainViewModel::stopClock
+                )
             }
         }
     }
@@ -64,7 +65,8 @@ fun MyApp(
     time: String,
     updateTime: (String) -> Unit,
     startClock: () -> Unit,
-    stopClock: () -> Unit) {
+    stopClock: () -> Unit
+) {
     Surface(color = MaterialTheme.colors.background) {
         Column(
             Modifier.fillMaxWidth(),
